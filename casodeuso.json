@@ -1,0 +1,204 @@
+{
+  "add": {
+    "doc": {
+      "endLemmas": "tabletON", 
+      "license": "GSI", 
+      "context": "/ctx/all", 
+      "end": "/c/es/tabletON", 
+      "features": [
+        "/c/es/navegadorON HasPrerequisite -", 
+        "/c/es/navegadorON - /c/es/tabletON", 
+        "- HasPrerequisite /c/es/tabletON"
+      ], 
+      "weight": 1.0, 
+      "start": "/c/es/navegadorON", 
+      "startLemmas": "navegadorON", 
+      "uri": "/a/[/HasPrerequisite/,/c/es/navegadorON/,/c/es/tabletON/]", 
+      "dataset": "/GSI", 
+      "sources": [
+        "/GSI/l", 
+        "/GSI/u"
+      ], 
+      "rel": "HasPrerequisite", 
+      "id": "/e/219eb1644b6e32767c9aa552e269200b6f4addfe"
+    }, 
+    "boost": 1.0
+  },
+  "add": {
+    "doc": {
+      "endLemmas": "navegadorON", 
+      "license": "GSI", 
+      "context": "/ctx/all", 
+      "end": "/c/es/navegadorON", 
+      "features": [
+        "/c/es/www.elmundo.esON HasPrerequisite -", 
+        "/c/es/www.elmundo.esON - /c/es/navegadorON", 
+        "- HasPrerequisite /c/es/navegadorON"
+      ], 
+      "weight": 1.0, 
+      "start": "/c/es/www.elmundo.esON", 
+      "startLemmas": "www.elmundo.esON", 
+      "uri": "/a/[/HasPrerequisite/,/c/es/www.elmundo.esON/,/c/es/navegadorON/]", 
+      "dataset": "/GSI", 
+      "sources": [
+        "/GSI/l", 
+        "/GSI/u"
+      ], 
+      "rel": "HasPrerequisite", 
+      "id": "/e/522f3ed9968ce971276e0a31b3bf762bdf5293f1"
+    }, 
+    "boost": 1.0
+  },
+  "add": {
+    "doc": {
+      "endLemmas": "www.elmundo.esON", 
+      "license": "GSI", 
+      "context": "/ctx/all", 
+      "end": "/c/es/www.elmundo.esON", 
+      "features": [
+        "/c/es/VerNoticias HasPrerequisite -", 
+        "/c/es/VerNoticias - /c/es/www.elmundo.esON", 
+        "- HasPrerequisite /c/es/www.elmundo.esON"
+      ], 
+      "weight": 1.0, 
+      "start": "/c/es/VerNoticias", 
+      "startLemmas": "VerNoticias", 
+      "uri": "/a/[/HasPrerequisite/,/c/es/VerNoticias/,/c/es/www.elmundo.esON/]", 
+      "dataset": "/GSI", 
+      "sources": [
+        "/GSI/l", 
+        "/GSI/u"
+      ], 
+      "rel": "HasPrerequisite", 
+      "id": "/e/0c7930e461b9e5670e14da930f25be1e2d77c063"
+    }, 
+    "boost": 1.0
+  },
+  "add": {
+    "doc": {
+      "endLemmas": "TelevisionON", 
+      "license": "GSI", 
+      "context": "/ctx/all", 
+      "end": "/c/es/TelevisionON", 
+      "features": [
+        "/c/es/ModoTelevisionON HasPrerequisite -", 
+        "/c/es/ModoTelevisionON - /c/es/TelevisionON", 
+        "- HasPrerequisite /c/es/TelevisionON"
+      ], 
+      "weight": 1.0, 
+      "start": "/c/es/ModoTelevisionON", 
+      "startLemmas": "ModoTelevisionON", 
+      "uri": "/a/[/HasPrerequisite/,/c/es/ModoTelevisionON/,/c/es/TelevisionON/]", 
+      "dataset": "/GSI", 
+      "sources": [
+        "/GSI/l", 
+        "/GSI/u"
+      ], 
+      "rel": "HasPrerequisite", 
+      "id": "/e/aabcebfac61440777e37b7f1938249e349d0c332"
+    }, 
+    "boost": 1.0
+  },
+  "add": {
+    "doc": {
+      "endLemmas": "ModoTelevisionON", 
+      "license": "GSI", 
+      "context": "/ctx/all", 
+      "end": "/c/es/ModoTelevisionON", 
+      "features": [
+        "/c/es/CanalCincoON HasPrerequisite -", 
+        "/c/es/CanalCincoON - /c/es/ModoTelevisionON", 
+        "- HasPrerequisite /c/es/ModoTelevisionON"
+      ], 
+      "weight": 1.0, 
+      "start": "/c/es/CanalCincoON", 
+      "startLemmas": "CanalCincoON", 
+      "uri": "/a/[/HasPrerequisite/,/c/es/CanalCincoON/,/c/es/ModoTelevisionON/]", 
+      "dataset": "/GSI", 
+      "sources": [
+        "/GSI/l", 
+        "/GSI/u"
+      ], 
+      "rel": "HasPrerequisite", 
+      "id": "/e/6f93e27110acd80fe838d90b49fd48ec3eb49e72"
+    }, 
+    "boost": 1.0
+  },
+  "add": {
+    "doc": {
+      "endLemmas": "ModoTelevisionON", 
+      "license": "GSI", 
+      "context": "/ctx/all", 
+      "end": "/c/es/ModoTelevisionON", 
+      "features": [
+        "/c/es/CanalUnoON HasPrerequisite -", 
+        "/c/es/CanalUnoON - /c/es/ModoTelevisionON", 
+        "- HasPrerequisite /c/es/ModoTelevisionON"
+      ], 
+      "weight": 1.0, 
+      "start": "/c/es/CanalUnoON", 
+      "startLemmas": "CanalUnoON", 
+      "uri": "/a/[/HasPrerequisite/,/c/es/CanalUnoON/,/c/es/ModoTelevisionON/]", 
+      "dataset": "/GSI", 
+      "sources": [
+        "/GSI/l", 
+        "/GSI/u"
+      ], 
+      "rel": "HasPrerequisite", 
+      "id": "/e/604538f3180d8ac7b4dde008dd375ec38f431121"
+    }, 
+    "boost": 1.0
+  },
+    "add": {
+    "doc": {
+      "endLemmas": "CanalUnoON", 
+      "license": "GSI", 
+      "context": "/ctx/all", 
+      "end": "/c/es/CanalUnoON", 
+      "features": [
+        "/c/es/VerNoticias HasPrerequisite -", 
+        "/c/es/VerNoticias - /c/es/CanalUnoON", 
+        "- HasPrerequisite /c/es/CanalUnoON"
+      ], 
+      "weight": 1.0, 
+      "start": "/c/es/VerNoticias", 
+      "startLemmas": "VerNoticias", 
+      "uri": "/a/[/HasPrerequisite/,/c/es/VerNoticias/,/c/es/CanalUnoON/]", 
+      "dataset": "/GSI", 
+      "sources": [
+        "/GSI/l", 
+        "/GSI/u"
+      ], 
+      "rel": "HasPrerequisite", 
+      "id": "/e/b1aee8c74576f65c0c17298bd4d49cef52463b9f"
+    }, 
+    "boost": 1.0
+  },
+  "add": {
+    "doc": {
+      "endLemmas": "CanalCincoON", 
+      "license": "GSI", 
+      "context": "/ctx/all", 
+      "end": "/c/es/CanalCincoON", 
+      "features": [
+        "/c/es/VerNoticias HasPrerequisite -", 
+        "/c/es/VerNoticias - /c/es/CanalCincoON", 
+        "- HasPrerequisite /c/es/CanalCincoON"
+      ], 
+      "weight": 1.0, 
+      "start": "/c/es/VerNoticias", 
+      "startLemmas": "VerNoticias", 
+      "uri": "/a/[/HasPrerequisite/,/c/es/VerNoticias/,/c/es/CanalCincoON/]", 
+      "dataset": "/GSI", 
+      "sources": [
+        "/GSI/l", 
+        "/GSI/u"
+      ], 
+      "rel": "HasPrerequisite", 
+      "id": "/e/0590f9af5858bbc656a1ad1fe00b6513109cbca6"
+    }, 
+    "boost": 1.0
+  },
+
+  "commit": {}
+}
