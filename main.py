@@ -4,7 +4,7 @@
 import sys
 from accessAPI import accessAPI
 
-def all_indices(value, qlist):
+def all_indices(value, qlist): #temp, not used
     indices = []
     idx = -1
     while True:
@@ -19,18 +19,17 @@ def getOptions(actions,deep):
 	actionsToPerform = list()
 	for action in actions:
 		try:
-			actionsToPerform.index(action[deep])
+			actionsToPerform.index(action[deep])#if it is added, we do not add it twice
 		except ValueError:
-			actionsToPerform.append(action[deep])
+			actionsToPerform.append(action[deep])#if it is not added to the list, we append it.
+		except IndexError:
+			print 'The END' #FINISH!
 	print actionsToPerform
 	nombre = raw_input('¿Qué opción quieres tomar? ')
-	try:
-		indexes = all_indices(nombre, actions)
-		print indexes
-	except ValueError:
-		print 'Esa opción no está disponible'
+	filteredActions = [action for action in actions if action[deep]==nombre] #only the branches conducting to a solution
+	getOptions(filteredActions, deep+1) #navigate recursively through the branch
 
-if(len(sys.argv) > 1):
+if(len(sys.argv) > 2):
 
 	mipeticion = accessAPI(str(sys.argv[1]),str(sys.argv[2]))
 	mipeticion.getActions() 
@@ -40,5 +39,5 @@ if(len(sys.argv) > 1):
 	
 
 else:
-	print "Debes indicar el elemento que quieres buscar" 
+	print "\nYou should indicate the host and the term to search\n\nFor example python main.py http://127.0.0.1:8084 vernoticias\n" 
 	
