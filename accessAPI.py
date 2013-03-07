@@ -9,7 +9,7 @@ class accessAPI:
 		self.text=text
 
 	def callAPI (self,text):
-		jsonContent=  urllib2.urlopen(self.host +"/search?rel=HasPrerequisite&startLemmas="+text).read()
+		jsonContent=  urllib2.urlopen(self.host +"/seddddarch?rel=HasPrerequisite&startLemmas="+text).read()
 		return self.convert(json.loads(jsonContent))#json content in utf-8
 
 	def convert(self,input): #in order to use the same format in the json
@@ -36,6 +36,14 @@ class accessAPI:
 
 	def getActions(self):
 		content = self.callAPI(self.text)
+		try:
+			if content['numFound'] ==0:
+				print '\nNo results found. Sorry! :(\n'
+				exit()
+		except KeyError:
+			print '\nThere seems to be a network problem... check the API is launched and the host is correct!\n'
+			exit()
+
 		for element in content['edges']: #get all the final elements of each solution
 			self.partial.append(element['endLemmas'])
 			self.results.append(self.partial)
