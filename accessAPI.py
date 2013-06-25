@@ -8,8 +8,13 @@ class accessAPI:
 		self.results =  list() #list containing all the possible branches conducting to a result
 		self.text=text
 
+
+	"""
+	Call the Conceptnet API searching for the matches of the query 'text'
+	It returns the JSON content provided by the API
+	"""
 	def callAPI (self,text):
-		jsonContent=  urllib2.urlopen(self.host +"/seddddarch?rel=HasPrerequisite&startLemmas="+text).read()
+		jsonContent=  urllib2.urlopen(self.host +"/search?rel=HasPrerequisite&startLemmas="+text).read()
 		return self.convert(json.loads(jsonContent))#json content in utf-8
 
 	def convert(self,input): #in order to use the same format in the json
